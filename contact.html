@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Naledi Motors — Book a test drive, enquire about a vehicle, or speak to our parts team. Visit us at Plot 13141, Francistown." />
+  <title>Naledi Motors | Contact Us</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">&#9733;&nbsp;NALEDI MOTORS</a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html"     class="nav-link">Home</a></li>
+        <li><a href="cars.html"      class="nav-link">Cars</a></li>
+        <li><a href="inventory.html" class="nav-link">Inventory</a></li>
+        <li><a href="about.html"     class="nav-link">About Us</a></li>
+        <li><a href="contact.html"   class="nav-link active">Contact Us</a></li>
+        <li><a href="contact.html"   class="nav-cta active-cta" style="background:var(--accent-gold);border-color:var(--accent-gold);color:var(--bg);">Book Test Drive</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobile-nav" role="menu">
+    <a href="index.html"     class="mobile-nav-link">Home</a>
+    <a href="cars.html"      class="mobile-nav-link">Cars</a>
+    <a href="inventory.html" class="mobile-nav-link">Inventory</a>
+    <a href="about.html"     class="mobile-nav-link">About Us</a>
+    <a href="contact.html"   class="mobile-nav-link active">Contact Us</a>
+    <a href="contact.html"   class="mobile-nav-cta">Book Test Drive</a>
+  </div>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="label-tag">We'd Love to Hear From You</span>
+        <h1>Contact Naledi Motors</h1>
+        <p>Whether you want to book a test drive, enquire about a specific model, or order a genuine part. Our team is ready to assist.</p>
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--bg);" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading" class="sr-only">Contact Form and Showroom Details</h2>
+        <div class="contact-grid">
+
+          <!-- FORM -->
+          <div class="contact-form-wrap fade-up">
+            <h2>Send Us a Message</h2>
+            <p>Complete the form below and one of our consultants will respond within one business day.</p>
+
+            <form id="contact-form" novalidate aria-label="Contact form">
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="cf-first">First Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="cf-first" name="first_name" placeholder="Katlego" required aria-required="true" autocomplete="given-name" />
+                </div>
+                <div class="form-group">
+                  <label for="cf-last">Last Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="cf-last" name="last_name" placeholder="Mokoya" required aria-required="true" autocomplete="family-name" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="cf-email">Email Address <span aria-hidden="true">*</span></label>
+                  <input type="email" id="cf-email" name="email" placeholder="katlego@example.com" required aria-required="true" autocomplete="email" />
+                </div>
+                <div class="form-group">
+                  <label for="cf-phone">Phone Number</label>
+                  <input type="tel" id="cf-phone" name="phone" placeholder="+267 74 835 439" autocomplete="tel" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="cf-inquiry">Nature of Inquiry <span aria-hidden="true">*</span></label>
+                <select id="cf-inquiry" name="inquiry_type" required aria-required="true">
+                  <option value="">Select inquiry type...</option>
+                  <option value="test-drive">Book a Test Drive</option>
+                  <option value="purchase">Vehicle Purchase Enquiry</option>
+                  <option value="finance">Finance &amp; Insurance</option>
+                  <option value="trade-in">Trade-In Valuation</option>
+                  <option value="parts">Parts &amp; Accessories</option>
+                  <option value="service">Service &amp; Maintenance</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="cf-model">Model of Interest</label>
+                <select id="cf-model" name="model">
+                  <option value="">Select a model (optional)...</option>
+                  <option value="c300">C300 — P 890,000</option>
+                  <option value="e450">E450 — P 1,250,000</option>
+                  <option value="s580">S580 — P 2,800,000</option>
+                  <option value="gle450">GLE 450 — P 1,450,000</option>
+                  <option value="g63">G63 AMG — P 3,900,000</option>
+                  <option value="amggt63s">AMG GT 63 S — P 3,200,000</option>
+                  <option value="eqs580">EQS 580 Electric — P 2,100,000</option>
+                  <option value="other">Other / Not Listed</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="cf-message">Message <span aria-hidden="true">*</span></label>
+                <textarea id="cf-message" name="message" placeholder="Tell us how we can help you..." required aria-required="true" rows="5"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold" style="width:100%;padding:16px;">Send Message</button>
+
+              <div id="form-success" class="form-success" role="alert" aria-live="polite">
+                Thank you for your message. A Naledi Motors consultant will contact you within one business day.
+              </div>
+
+            </form>
+          </div>
+
+          <!-- INFO -->
+          <div class="contact-info-wrap fade-up">
+            <h2>Visit Our Showroom</h2>
+            <p>Our flagship showroom is open six days a week, with extended hours on request for preferred clients.</p>
+
+            <ul class="contact-info-list" role="list">
+              <li class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">&#9679;</div>
+                <div class="contact-info-text">
+                  <strong>Address</strong>
+                  <span>Plot 13141<br>Francistown, 2196<br>Botswana</span>
+                </div>
+              </li>
+              <li class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">&#9742;</div>
+                <div class="contact-info-text">
+                  <strong>Sales</strong>
+                  <span><a href="tel:+26774835439" style="color:var(--text-secondary);transition:var(--transition);" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--text-secondary)'">+267 74 835 439</a></span>
+                </div>
+              </li>
+              <li class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">&#9742;</div>
+                <div class="contact-info-text">
+                  <strong>Parts &amp; Service</strong>
+                  <span><a href="tel:+26774835439" style="color:var(--text-secondary);transition:var(--transition);" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--text-secondary)'">+267 74 835 439</a></span>
+                </div>
+              </li>
+              <li class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">&#9993;</div>
+                <div class="contact-info-text">
+                  <strong>Email — Sales</strong>
+                  <span><a href="mailto:sales@naledimotors.co.za" style="color:var(--text-secondary);transition:var(--transition);" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--text-secondary)'">sales@naledimotors.co.za</a></span>
+                </div>
+              </li>
+              <li class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">&#9993;</div>
+                <div class="contact-info-text">
+                  <strong>Email — Parts</strong>
+                  <span><a href="mailto:parts@naledimotors.co.za" style="color:var(--text-secondary);transition:var(--transition);" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--text-secondary)'">parts@naledimotors.co.za</a></span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="hours-grid" aria-label="Opening hours">
+              <h4>Opening Hours</h4>
+              <div class="hour-row">
+                <span>Monday – Friday</span>
+                <span>08:00 – 18:00</span>
+              </div>
+              <div class="hour-row">
+                <span>Saturday</span>
+                <span>09:00 – 15:00</span>
+              </div>
+              <div class="hour-row">
+                <span>Sunday</span>
+                <span>Closed</span>
+              </div>
+              <div class="hour-row">
+                <span>Public Holidays</span>
+                <span>09:00 – 13:00</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Map placeholder -->
+        <div class="map-placeholder fade-up" role="img" aria-label="Map location placeholder — Plot 13141, Francistown">
+          <span class="map-icon" aria-hidden="true">&#9679;</span>
+          <strong>Plot 13141, Francistown</strong>
+          <span style="font-size:.8rem;">To embed a real map, replace this element with a Google Maps iframe.</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">&#9733;&nbsp;NALEDI MOTORS</a>
+          <p>Botswana's premier exclusive Mercedes-Benz dealership. Delivering automotive excellence from the heart of Francistown since 2026.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cars.html">Our Cars</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Models</h4>
+          <ul>
+            <li><a href="cars.html">C-Class</a></li>
+            <li><a href="cars.html">E-Class</a></li>
+            <li><a href="cars.html">S-Class</a></li>
+            <li><a href="cars.html">GLE SUV</a></li>
+            <li><a href="cars.html">G-Class AMG</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item"><span class="footer-contact-icon">&#9679;</span><span>Plot 13141, Francistown</span></div>
+          <div class="footer-contact-item"><span class="footer-contact-icon">&#9742;</span><span>+267 74 835 439</span></div>
+          <div class="footer-contact-item"><span class="footer-contact-icon">&#9993;</span><span>info@naledimotors.co.za</span></div>
+          <div class="footer-contact-item"><span class="footer-contact-icon">&#9200;</span><span>Mon–Fri: 08:00–18:00 | Sat: 09:00–15:00</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Naledi Motors (Pty) Ltd. All rights reserved.</p>
+        <p style="color:var(--text-muted);">Registered Mercedes-Benz Authorised Dealer | Botswana</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
